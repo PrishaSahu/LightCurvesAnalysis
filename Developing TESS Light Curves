@@ -1,0 +1,266 @@
+#Simulated light curves of a select number of light curves that were deemed important to understand upon analyzing their light curve properties
+
+import numpy as np
+import matplotlib as plt
+import os
+
+os.chdir(os.path.expanduser("~/Documents/AstroProject"))
+
+# Confirm you're in the right place
+print("Current directory:", os.getcwd())
+print("Files here:", os.listdir())
+
+#lc_2018eny_cleaned
+
+data = np.loadtxt("lc_2018eny_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2018eny Gaia18bzb")
+plt.grid(True)
+plt.show()
+
+#lc_2018dyk_cleaned
+
+data = np.loadtxt("lc_2018kpc_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2018kpc Gaia18dyk")
+plt.grid(True)
+plt.show()
+
+#lc_2019alb_cleaned
+
+data = np.loadtxt("lc_2019alb_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2019alb Gaia19akj")
+plt.grid(True)
+plt.show()
+
+#lc_2019cqk_cleaned
+
+data = np.loadtxt("lc_2019cqk_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2019cqk Gaia19bdw")
+plt.grid(True)
+plt.show()
+
+#lc_2019con_cleaned
+
+data = np.loadtxt("lc_2019con_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2019con Gaia19bdh")
+plt.grid(True)
+plt.show()
+
+#lc_2019ehx_cleaned
+
+data = np.loadtxt("lc_2019ehx_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2019ehx Gaia19bpr")
+plt.grid(True)
+plt.show()
+
+#lc_2021klj_cleaned
+
+data = np.loadtxt("lc_2021klj_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2021klj Gaia21bzx")
+plt.grid(True)
+plt.show()
+
+#lc_2023hra_cleaned
+
+data = np.loadtxt("lc_2023hra_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2023hra Gaia23brr")
+plt.grid(True)
+plt.show()
+
+#lc_2023tdv_cleaned
+
+data = np.loadtxt("lc_2023tdv_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2023tdv Gaia23clo")
+plt.grid(True)
+plt.show()
+
+#lc_2024ehh_cleaned
+
+data = np.loadtxt("lc_2024ehh_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2024ehh Gaia24ayh")
+plt.grid(True)
+plt.show()
+
+#lc_2024ebx_cleaned
+
+data = np.loadtxt("lc_2024ebx_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2024ebx Gaia24awq")
+plt.grid(True)
+plt.show()
+
+#lc_2024dyk_cleaned
+
+data = np.loadtxt("lc_2024dyk_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2024dyk Gaia24avc")
+plt.grid(True)
+plt.show()
+
+#lc_2024ger_cleaned
+
+data = np.loadtxt("lc_2024ger_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2024ger Gaia24beh")
+plt.grid(True)
+plt.show()
+
+#lc_2024dyj_cleaned
+
+data = np.loadtxt("lc_2024dyj_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2024dyj Gaia24avb")
+plt.grid(True)
+plt.show()
+
+#lc_2024pee_cleaned
+
+data = np.loadtxt("lc_2024pee_cleaned", comments="#", skiprows=2)
+btjd = data[:, 0]      
+cts_per_s = data[:, 2] 
+
+print("BTJD:", btjd[:5])
+print("cts_per_s:", cts_per_s[:5])
+
+plt.figure(figsize=(8, 4))
+plt.plot(btjd, cts_per_s, marker='o', linestyle='-', markersize=3)
+plt.xlabel("BTJD")
+plt.ylabel("Counts per second")
+plt.title("AT2024pee Gaia24bsv")
+plt.grid(True)
+plt.show()
