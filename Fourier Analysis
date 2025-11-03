@@ -1,0 +1,208 @@
+//Conducting Fourier Analysis on selected light curves
+
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import lombscargle
+
+#AT2018eny Gaia18bzb
+
+data = np.loadtxt('lc_2018eny_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.ylim(0, 100)
+plt.xlim(0, 2.5)
+plt.show()
+
+#AT2018kpc Gaia18dyk
+
+data = np.loadtxt('lc_2018kpc_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.ylim(0, 100)
+plt.xlim(0, 2.5)
+plt.show()
+
+#AT2019alb Gaia19akj
+
+data = np.loadtxt('lc_2019alb_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.ylim(0, 200)
+plt.xlim(0, 2.5)
+plt.show()
+
+#AT2019cqk Gaia19akj
+
+data = np.loadtxt('lc_2019cqk_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.ylim(0, 900)
+plt.xlim(0, 2.5)
+plt.show()
+
+#AT2019con Gaia19bdh
+
+data = np.loadtxt('lc_2019con_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.ylim(0, 300)
+plt.xlim(0, 2.5)
+plt.show()
+
+#AT2019ehx Gaia19bpr
+
+data = np.loadtxt('lc_2019ehx_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.ylim(0, 300)
+plt.xlim(0, 2.5)
+plt.show()
+
+#AT2021klj Gaia21bzx
+
+data = np.loadtxt('lc_2021klj_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.xlim(0, 2.5)
+plt.show()
+
+#AT2023hra Gaia23brr
+
+data = np.loadtxt('lc_2023hra_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.xlim(0, 5)
+plt.show()
+
+#AT2024ebx Gaia24awq
+
+data = np.loadtxt('lc_2024ebx_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.xlim(0, 8)
+plt.show()
+
+#AT2024dyk Gaia24avc
+
+data = np.loadtxt('lc_2024dyk_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.xlim(0, 8)
+plt.show()
+
+#AT2024ger Gaia24beh
+
+data = np.loadtxt('lc_2024ger_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.xlim(0, 8)
+plt.show()
+
+#AT2024dyj Gaia24avb
+
+data = np.loadtxt('lc_2024dyj_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.xlim(0, 8)
+plt.show()
+
+#AT2024pee Gaia24bsv
+
+data = np.loadtxt('lc_2024pee_cleaned')
+x = data[:,0]
+y = data[:,9]
+baseline = x[-1] - x[0]
+spacing = x[1] - x[0]
+min_frequency = 1/baseline
+max_frequency = 0.5*(1./spacing)
+freq = np.r_[min_frequency:max_frequency:1262j]
+results = lombscargle(x,y,freq)
+plt.plot(freq, results, 'k')
+plt.xlim(0, 8)
+plt.show()
+
+
