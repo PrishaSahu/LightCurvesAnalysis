@@ -1,1 +1,3 @@
 # LightCurvesAnalysis
+
+This project analyzes TESS light curves by extracting data from the TESS Transients website [https://tess.mit.edu/public/tesstransients/pages/sector83-all-transients.html] (specifically from Sector 83) and applying Fourier-based time-series analysis to identify and study periodic signals in astrophysical transients. The code automates the process of downloading and parsing light-curve files, cleaning and normalizing flux data, and performing Lomb–Scargle periodograms to detect periodicity. It also provides visualization tools to plot light curves, power spectra, and folded data for deeper inspection of transient behavior. This repository aims to make TESS transient analysis reproducible and adaptable for other sector
